@@ -1,48 +1,75 @@
-/*Body*/
-* {
-    margin:0; 
-    padding:0;
+.navbar{
+    background: #0181A8;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
+a.navbar-brand{
+    justify-content: flex-end;
+    display: flex;   
 }
-p.title{
-    font-weight: 200;
-    font-size: 22px;
+.btn#sidebarCollapse{
+    background: #E2E22A;
 }
-p.subtitle{
-    font-weight: 300;
-    font-size: 20px;
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+    background: #E3244F;
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 60;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
 }
-p{
-	font-weight: 500;
-    text-align: justify;
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
 }
-.card{
-	box-shadow: 0 5px 30px #000000;
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
 }
-.card-header{
-    border-left-width: 8px;
-	border-color: #FCA615;
-	border-left-style: solid;
-	background: #FFFFFF;
+
+#content.active {
+  width: 100%;
+  margin: 0;
 }
-.card-body{
-    text-align: justify;
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
 }
-.card-text{
-    border-left-width: 8px;
-	border-color: #e3244f;
-	border-left-style: solid;
-	background: #FFFFFF;
+
+.img-thumbnail{
+    width: 65px;
+    height: 65px;
 }
-.ligthbox{
-    color: #FFFFFF;
-}
-nav.navbar{
-    background: rgb(20,187,239);
-    background: linear-gradient(90deg, rgba(20,187,239,1) 0%, rgba(226,226,42,1) 100%);
-}
-.navbar.nav-item.dropdown{
-    color: rgba(227,36,79,1.00);
-}
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/

@@ -1,0 +1,106 @@
+/*Body*/
+* {
+    margin:0; 
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+p.title{
+    font-weight: 200;
+    font-size: 22px;
+}
+p.subtitle{
+    font-weight: 300;
+    font-size: 20px;
+}
+p{
+	font-weight: 500;
+    text-align: justify;
+}
+.card{
+	box-shadow: 0 5px 30px #000000;
+}
+.card-header{
+    border-left-width: 8px;
+	border-color: #FCA615;
+	border-left-style: solid;
+	background: #FFFFFF;
+}
+.card-body{
+    text-align: justify;
+}
+.card-text{
+    border-left-width: 8px;
+	border-color: #e3244f;
+	border-left-style: solid;
+	background: #FFFFFF;
+}
+.ligthbox{
+    color: #FFFFFF;
+    background: rgb(119,89,153);
+    background: linear-gradient(90deg, rgba(119,89,153,.6) 0%, rgba(20,187,239,.6) 100%);
+}
+
+/*Hover Flip */
+.container00{
+    display: flex;
+    justify-content: center;
+}
+.txthhb{
+    font-size: 13.5px;
+    padding: 10px;
+}
+
+.hoverhorizontal{
+    width: 205px;
+    height: 300px;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 205px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  font-size: 25px;
+  background-color: #0181A8;
+  color: rgba(255,255,255,1.00);
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #14BBEF;
+  color: white;
+  transform: rotateY(180deg);
+}

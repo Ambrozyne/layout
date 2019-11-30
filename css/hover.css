@@ -1,0 +1,113 @@
+/*Body*/
+* {
+    margin:0; 
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+p.title{
+    font-weight: 200;
+    font-size: 22px;
+}
+p.subtitle{
+    font-weight: 300;
+    font-size: 20px;
+}
+p{
+	font-weight: 500;
+    text-align: justify;
+}
+.card{
+	box-shadow: 0 5px 30px #000000;
+}
+.card-header{
+    border-left-width: 8px;
+	border-color: #FCA615;
+	border-left-style: solid;
+	background: #FFFFFF;
+}
+.card-body{
+    text-align: justify;
+}
+.card-text{
+    border-left-width: 8px;
+	border-color: #e3244f;
+	border-left-style: solid;
+	background: #FFFFFF;
+}
+.ligthbox{
+    color: #FFFFFF;
+    background: rgb(119,89,153);
+    background: linear-gradient(90deg, rgba(119,89,153,.6) 0%, rgba(20,187,239,.6) 100%);
+}
+
+/* Hover */
+.container00{
+    background: #E2E22A;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.container00 .card#c01{
+    box-shadow: 0 15px 40px #353535;
+    background: #F5F5F5;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 390px;
+}
+.container00 .card#c01 .face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.container00 .card#c01 .face.face1{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.container00 .card#c01 .face.face1 .listc02{
+    padding: 0;
+    margin: 100px -250px 0px -250px;
+    width: 100%;
+}
+.container00 .card#c01:hover .face.face2{
+    height: 90px;
+}
+.container00 .card#c01:hover .arrow-up#c02 .fa-angle-double-up{
+    font-size: 35px;
+    margin-top: 70px;
+}
+.container00 .card#c01 .face.face2{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(206,178,124,0.90);
+    position: absolute;
+}
+.container00 .card#c01:hover .face.face2 p#txtc02{
+    font-size: 6px;
+}
+.container00 .card#c01 .face.face2 p#txtc02{
+    transition: 0.5s;
+    color: #FFFFFF;
+    font-size: 19px;
+    margin: 0px;
+    height: 100%;
+}
+.fas.fa-angle-double-up{
+    transition: 0.5s;
+    position: relative;
+    font-size: 60px;
+    color: #14bbef;
+    margin: 360px 0px 0px 45%;
+}
